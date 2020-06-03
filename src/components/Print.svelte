@@ -144,7 +144,7 @@
 
 <svelte:head>
   <script
-    src="https://k00lagin.github.io/enhanced-arm-esia/js/docxtemplater-latest.min.js">
+    src="https://k00lagin.github.io/enhanced-arm-esia/js/docxtemplater.js">
   </script>
   <script src="https://k00lagin.github.io/enhanced-arm-esia/js/pizzip.js">
   </script>
