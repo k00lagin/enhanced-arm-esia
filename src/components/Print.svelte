@@ -1,11 +1,5 @@
 <script>
-// body[data-page="ConfirmationStatusPage"] подтверждение
-// data-page="ConfirmationStatusPage" p-confirmation__title обновление паспорта
-// data-page="RecoverPage"
-// data-page="DeletePage"
 	import { mfc, director } from '../stores.js';
-	import { format } from 'date-fns';
-	import { ru } from 'date-fns/locale';
   function loadFile(url, callback) {
     PizZipUtils.getBinaryContent(url, callback);
   }
@@ -79,7 +73,7 @@
           citizenship: document
             .querySelector("#citizenshipField option[selected]")
 						.textContent.trim(),
-					date: format(new Date(), 'd MMMM y',{locale: ru}),
+					date: (new Intl.DateTimeFormat("ru", {year: "numeric", month: "long", day: "numeric"})).format(Date.now()),
 					variant: (() => {
 						switch (document.body.getAttribute('data-page')) {
 							case 'RegistrationPage':
