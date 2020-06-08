@@ -2,7 +2,7 @@ import Print from "./components/Print.svelte";
 import Settings from "./components/Settings.svelte";
 
 setInterval(() => {
-	let next = document.querySelector('form > button:last-child');
+	let next = document.querySelector('form > button:last-child') || document.querySelector('form > .f-delete__controls > button:last-child');
 	if (next && next.textContent.indexOf('Продолжить') !== 0 && !document.querySelector('.enhanced-print')) {
 		var print = new Print({
 			target: next.parentElement,
