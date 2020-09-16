@@ -8,7 +8,7 @@ const production = !process.env.ROLLUP_WATCH;
 let preamble = '// ==UserScript==\n' +
 	'// @name        Enhanced ARM ESIA\n' +
 	'// @namespace   k00lagin.enhanced-arm-esia\n' +
-	'// @version     0.0.2\n' +
+	'// @version     0.0.3\n' +
 	'// @description Make ARM ESIA great again!\n' +
 	'// @author      k00lagin\n' +
 	'// @match       https://esia.gosuslugi.ru/ra/*\n' +
