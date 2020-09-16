@@ -14,6 +14,10 @@ setInterval(() => {
 			target: document.body,
 		});
 	}
+	let accContainer = document.querySelector('.b-verification-success-multiple .jspContainer');
+	if (accContainer && accContainer.style.height == '514px') {
+		accContainer.style = 'width:497px;height:514px!important;';
+	}
 }, 100);
 
 export default app;
