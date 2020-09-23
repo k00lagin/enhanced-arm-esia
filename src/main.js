@@ -15,8 +15,9 @@ setInterval(() => {
 		});
 	}
 	let accContainer = document.querySelector('.b-verification-success-multiple .jspContainer');
-	if (accContainer && accContainer.style.height == '514px') {
-		accContainer.style = 'width:497px;height:514px!important;';
+	if (accContainer) {
+		accContainer.style = 'position:relative;';
+		accContainer.classList.remove('jspContainer');
 	}
 }, 100);
 
